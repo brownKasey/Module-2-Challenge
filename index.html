@@ -4,50 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href=".assets/css/reset.css">
-    <link rel="stylesheet" href=".assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Kasey's Portolio</title>
 </head>
 
 <!-- Header -->
-<header class="header">
-    <h1>Kasey's Portolio</h1>
-</header>
-
-<!-- Navigation bar -->
 <body>
-    
-    <nav class="nav" >
-        <ul>
-            <li class="about-me"> <a href="#about-me">About Me</a> </li>
-            <li class="work"> <a href="#work">Work</a> </li>
-            <li> <a href="#"></a> </li>
-            <li> <a href="#"></a> </li>
-        </ul>
-    </nav>
+    <header class="mountain">
+        <h1 class="title">Kasey's Portolio</h1> 
+        <div class="picture"></div>
+        <div class="primary-nav">
+            <nav>
+                <ul>
+                    <li> <a href="#about-me">About Me</a> </li>
+                    <li> <a href="#work">Work</a> </li>
+                    <li> <a href="#contact-me">Contact Me</a></li>
+                </ul>
+            </nav>
+        </header> 
+
 </body>
 
-<main>
-        <section id="about-me">
-            <h2>About me</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tellus enim, facilisis a lobortis vel, porta quis est. Sed tempor rutrum dapibus. Mauris a eros sit amet augue aliquet feugiat. Pellentesque congue mi eros, at ultrices eros dictum eu. Aliquam condimentum pretium enim, tempus dictum quam sodales non. Aenean non dolor cursus, sollicitudin est non, tempus enim. Nam tincidunt scelerisque elit hendrerit convallis.</p>
-        </section>
-        <section id="work">
-            <h2>Work</h2>
-
-        </section>
+<!--About me-->
+<main class="content">
+    <section class="about-me" id="about-me">
+        <h2 class="heading">About Me</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consequat bibendum odio non congue. Sed ut nisi vitae augue mollis accumsan. Aliquam erat volutpat. Nullam fringilla nisl neque, sit amet hendrerit orci auctor ac. Ut semper ut lacus nec gravida. Cras sed ligula sit amet nunc cursus molestie eu a mauris. Sed sagittis laoreet faucibus. Vestibulum elit tortor, tristique eget quam in, aliquet convallis ipsum.
+        </p>
+    </section>
 </main>
 
-<!-- Footer -->
-<footer>
-    <h2>Contact Me</h2>
-    <nav>
+<!--Work-->
+<div class="row">  
+    <div class="work">
+        <h2 class="heading-2" id="work">Work</h2>
+        <div class="card" id="card-1">
+            <h5 class="banner"><a href="https://www.google.com/">Google</a></h5>
+        </div>
+        <div class="card" id="card-2">
+            <h5 class="banner"><a href="https://www.youtube.com/">Youtube</a></h5>
+        </div>
+    </div>
+</div>
+
+ <!-- Footer -->
+<footer class="footer" id="contact-me">
+    <section class="contact-me">
+        <h2 class="heading-3">Contact Me</h2>
         <ul>
-            <li>number</li>
-            <li>email</li>
-            <li>github</li>
-            <li>miscellaneous</li>
+            <li> <a href="https://github.com/brownKasey">Github</a> </li>
+            <li> <a href="mailto:kaseyabrown28@gmail.com">Email</a></li>
+            <li>  <a href="https://twitter.com/">Twitter</a> </li>
         </ul>
-    </nav>
+     </section>
 </footer>
 </html>

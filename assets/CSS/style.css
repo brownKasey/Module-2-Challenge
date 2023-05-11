@@ -1,27 +1,268 @@
-* {
-    box-sizing: border-box;
-    padding: 0;
+*{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+:root{
+    /* Spacing */
+    --header-top: 40px;
+    --side: 5%;
+    --width-size: 100%;
+    --height-size: 275px;
+    /* Color */
+    --text: #fff;
+    --primary-color: #c8dded;
+    --secondary-color: #54748b;
+}
+/*Media Query*/
+@media screen and (max-width: 992px) {
+    .content{
+        display: flex;
+        width: 75%;
+    }
+    .row{
+        display: flex;
+        width: 75%;
+    }
+    p{
+        display: flex;
+    
+    }
 }
 
-body {
-    background-color: wheat;
+
+
+/* Header */
+  .mountain{
+    width: var(--width-size);
+    height: 300px;
+    background-image: linear-gradient(rgba(0,0,0,0.250),rgba(0,0,0,0.250)),url("../images/Header.jpg");
+    background-size: cover;
+    padding-left: 60%;
+    padding-top: var(--header-top);
+    box-sizing: border-box;
+  } 
+/* h1 title, changes position */
+  .title {
+    position: absolute;
+    top: var(--header-top);
+    left: var(--side);
+    color: var(--text);
+    font-size: 75px;
+}
+/* Profile picture*/
+.picture{
+    position: absolute;
+    top: 158px;
+    left: 317px;
+    width: 85px;
+    height: 85px;
+    border: 5px solid var(--primary-color);
+    box-sizing: border-box;
+    border-radius: 50%;
+    background: url("../images/Profile.JPG");
+    background-position: center;
+    background-size: cover;
 }
 
-.header {
-    padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2a607c;
-    color: #9b1b1b;
+
+/*Navigation Bar*/
+.primary-nav{
+    height: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border:35px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+nav{
+    flex: 1;
+    text-align: right;
 }
 
-.nav {
+.primary-nav ul li {
+    list-style-type: none;
     display: inline;
-    float: right;
-    list-style: none;
-    padding: 15px;
-    margin-right: 10px;
-
-    background: hsl(0, 0%, 100%, 0.1);
-    backdrop-filter: blur(1rem);
+    padding: 10px 75px;
+    font-size: 16px;
+    
 }
+
+.primary-nav ul li a {
+    text-decoration: none;
+    color: var(--text);
+    font-size: 16px;
+}
+/* Makes Nav text change color when hovering */
+.primary-nav ul li a:hover {
+    color: var(--secondary-color);
+    transition: .3s;
+}
+
+/* About me */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: var(--side);
+    margin-top: 2%;
+    align-items: center;
+}
+
+.about-me {
+    display: flex;
+    justify-content: space-between;
+    height: var(--height-size);
+    padding: 30px;
+    flex-direction: row-reverse;
+    background: var(--primary-color);
+    color: var(--text);
+    align-items: center;
+    box-shadow: -8px 8px 0px -1px var(--secondary-color);
+}
+
+.heading {
+    margin-right: 4%;
+    padding-left: 6%;
+    text-align: end;
+    color: var(--text);
+    font-size: 100px;
+}
+p {
+    color: var(--text);
+    font-size: 18px;
+    line-height: 1.5;
+}
+/* Work */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: var(--side);
+    margin-top: 2%;
+    align-items: center;
+}
+
+.work {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+    width: var(--width-size);
+    height: 315px;
+    padding: 30px;
+    background: var(--secondary-color);
+    color: var(--text);
+    box-shadow: 8px 8px 0px -1px var(--primary-color);
+}
+
+.heading-2 {
+    margin-right: 222px;
+    text-align: end;
+    color: var(--text);
+    font-size: 100px;
+}
+
+.card {
+    width: 575px;
+    height: 200px;
+    padding: 25px 0px;
+    border: 5px solid var(--primary-color);
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    box-shadow: -8px 8px 0px -1px #3f5f75;
+}
+#card-1{
+    background: linear-gradient(rgba(0,0,0,0.550),rgba(0,0,0,0.550)),url("../images/work-1.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#card-2{
+    background: linear-gradient(rgba(0,0,0,0.550),rgba(0,0,0,0.550)),url("../images/work-2.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+a {
+    color: var(--text);
+    text-decoration: none;
+}
+
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 90px;
+    height: 50px;
+    background: var(--primary-color);
+}
+
+/* Makes cards grow and background get lighter */
+#card-1:hover{
+    transform: scale(103%);
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url("../images/work-1.jpg");
+    background-position: center;
+    background-size: cover;
+}
+#card-2:hover{
+    transform: scale(103%);
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url("../images/work-2.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+/* Footer */
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: var(--side);
+    margin-top: 2%;
+    align-items: center;
+}
+
+ .contact-me {
+    display: flex;
+    justify-content: space-between;
+    width: var(--width-size);
+    height: var(--height-size);
+    padding: 30px;
+    flex-direction: row-reverse;
+    background: var(--primary-color);
+    color: var(--text);
+    align-items: center;
+    box-shadow: -8px 8px 0px -1px var(--secondary-color);
+}
+
+.heading-3 {
+    margin-right: 4%;
+    text-align: end;
+    color: var(--text);
+    font-size: 100px;
+}
+
+section ul {
+    display: flex;
+}
+section ul li {
+    list-style-type: none;
+    display: inline-flex;
+    padding: 10px 180px;
+}
+
+section ul li a {
+    text-decoration: none;
+    color: var(--text);
+    font-size: 20px;
+}
+
+/*Makes footer links change colors when hovered over*/
+
+section ul li a:hover {
+    color: var(--secondary-color);
+    transition: .3s;
+}
+
