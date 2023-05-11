@@ -14,23 +14,6 @@
     --primary-color: #c8dded;
     --secondary-color: #54748b;
 }
-/*Media Query*/
-@media screen and (max-width: 992px) {
-    .content{
-        display: flex;
-        width: 75%;
-    }
-    .row{
-        display: flex;
-        width: 75%;
-    }
-    p{
-        display: flex;
-    
-    }
-}
-
-
 
 /* Header */
   .mountain{
